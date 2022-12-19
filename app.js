@@ -48,6 +48,7 @@ app.post("/", function (req, res) {
         members: data,
       });
       console.log(response);
+
       res.sendFile(__dirname + "/success.html");
     } catch (error) {
       console.log(error);
